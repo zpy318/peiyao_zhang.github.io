@@ -1,2 +1,2 @@
 # Homepage
-This homepage is adapted from [https://github.com/jonbarron/website](Jon Barron)'s website template.
+This homepage is adapted from [Jon Barron](https://github.com/jonbarron/website)'s website template.
