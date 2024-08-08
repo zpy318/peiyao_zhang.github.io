@@ -8,7 +8,7 @@
     <meta name="author" content="Peiyao Zhang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
-    <link rel="icon" href="images/JHU.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/JHU.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
@@ -44,7 +44,7 @@
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%;vertical-align:center;padding-top:45px;">
-                  <a href="images/Peiyao_Zhang.jpg"><img style="width:100%;max-width:100%;object-fit:cover; border-radius: 3%;" alt="profile photo" src="images/Peiyao_Zhang.jpg" class="shadow"></a>
+                  <a href="images/Peiyao_Zhang.jpg"><img style="width:100%;max-width:100%;object-fit:cover; border-radius: 3%;" alt="profile photo" src="images/Peiyao_Zhang.jpg" class="imageshadow"></a>
                 </td> 
               </tr>
             </tbody>
@@ -61,8 +61,8 @@
                     <br>[Jan 2024] - One paper was accepted by <a class="news" href="https://2024.ieee-icra.org" target="_blank">ICRA 2024</a>.
                     <br>[Jan 2024] - One paper was accepted by <a class="news" href="https://www.ieee-ras.org/publications/ra-l" target="_blank">RA-L</a>.
                     <br>[Oct 2023] - Our poster received the 1st Place Best Poster Award at <a class="news" href="https://medrob-workshop.github.io" target="_blank">DMMR Workshop</a> 
-                    at <a class="news" href="https://ieee-iros.org" target="_blank">IROS 2023</a>. [<a class="news" href="poster/DMMR_IROS_2023_Poster.pdf" target="_blank">Poster</a>][<a class="news" href="images/dmmr.jpg" target="_blank">Photo</a>]
-                    <br>[Apr 2023] - One abstract was accepted by ICRA 2023 Workshop: <a class="news" href="https://sites.google.com/view/icra2023workshop-surgicalrobot/" target="_blank">New Evolutions in Surgical Robotics</a>. [<a class="news" href="poster/ICRA23_Surgical_Robotics_Workshop_Poster_Portrait_White_Background.jpg" target="_blank">Poster</a>]
+                    at <a class="news" href="https://ieee-iros.org" target="_blank">IROS 2023</a>. [<a class="news" href="data/DMMR_IROS_2023_Poster.pdf" target="_blank">Poster</a>][<a class="news" href="images/dmmr.jpg" target="_blank">Photo</a>]
+                    <br>[Apr 2023] - One abstract was accepted by ICRA 2023 Workshop: <a class="news" href="https://sites.google.com/view/icra2023workshop-surgicalrobot/" target="_blank">New Evolutions in Surgical Robotics</a>. [<a class="news" href="data/ICRA23_Surgical_Robotics_Workshop_Poster_Portrait_White_Background.jpg" target="_blank">Poster</a>]
                     <br>[Jan 2023] - Two papers were accepted by <a class="news" href="https://www.icra2023.org" target="_blank">ICRA 2023</a>.
                     <br>[Oct 2022] - One paper was accepted by <a class="news" href="http://ieeebibm.org/BIBM2022/" target="_blank">BIBM 2022</a>.
                     <br>[Jan 2022] - One paper was accepted by <a class="news" href="https://kenes-exhibitions.com/biomed2022/" target="_blank">BioMed 2022</a>.
@@ -86,6 +86,7 @@
           </table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- EMBC 2024 -->
               <tr>
                 <td style="padding:10px;width:40%;vertical-align:left">
                   <video  width=100% muted autoplay loop>
@@ -113,6 +114,7 @@
                   </p>
                 </td>
               </tr>
+              <!-- RA-L 2024 -->
               <tr>
                 <td style="padding:5px;width:40%;vertical-align:left">
                   <video  width=100% muted autoplay loop>
@@ -142,52 +144,134 @@
                   </p>
                 </td>
               </tr>
-              <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-                    <source src="images/cat3d.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video></div>
-                    <img src='images/cat3d.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function cat3d_start() {
-                      document.getElementById('cat3d_image').style.opacity = "1";
-                    }
 
-                    function cat3d_stop() {
-                      document.getElementById('cat3d_image').style.opacity = "0";
-                    }
-                    cat3d_stop()
+              <!-- RA-L 2024 equal contribution -->
+              <tr>
+                <td style="padding:10px;width:40%;vertical-align:left">
+                  <!-- <video  width=100% muted autoplay loop>
+                    <source src="images/RA-L_workflow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video> -->
+                    <img src='images/ral2024_equal.gif' width=100%>
+                  <script type="text/javascript">
                   </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://cat3d.github.io/">
-                    <span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models</span>
-                  </a>
+                <td style="padding:10px;width:60%;vertical-align:top;">
+                  <div class="papertitle">
+                    Towards Autonomous Retinal Microsurgery Using RGB-D Images
+                  </div>
+                  <a class="author" href="https://sites.google.com/view/jkimrobot/home" target="_blank">Ji Woong Kim*</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=V9LQ9LQAAAAJ&hl=en&oi=ao" target="_blank">Shuwen Wei*</a>,
+                  <strong class="correspondingauthor">Peiyao Zhang*</strong>,
+                  <a class="author" href="https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en&oi=ao" target="_blank">Peter Gehlbach</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=TnmKE98AAAAJ&hl=en&oi=ao" target="_blank">Jin U. Kang</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=X2Snm74AAAAJ&hl=en&oi=ao" target="_blank">Iulian Iordachita</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=ra1iQ8cAAAAJ&hl=en&oi=ao" target="_blank">Marin Kobilarov</a>
                   <br>
-                  <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-                  <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-                  <a href="https://henzler.github.io/">Philipp Henzler</a>,
-                  <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-                  <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-                  <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-                  <strong>Jonathan T. Barron</strong>,
-                  <a href="https://poolio.github.io/">Ben Poole</a>*
-
-                  <br>
-                  <em>arXiv</em>, 2024
-                  <br>
-                  <a href="https://cat3d.github.io/">project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+                  <div class="description"><em>RA-L</em>, 2024</div>
+                  [<a class="paperlink" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10443071" target="_blank">Paper</a>]
+                  [<a class="paperlink" href="https://sites.google.com/view/eyesurgerymicroscopeoct/home" target="_blank">Website</a>]
                   <p></p>
-                  <p>
-                  A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+                  <p class="description" style="text-align:justify;">
+                    We demonstrate a real-time autonomous system and workflow for subretinal injection. 
+                    This is enabled by the global view provided by microscope images and dynamically-aligned B-scan images that track the needle axis for real-time depth feedback.
                   </p>
                 </td>
               </tr>
+
+              <!-- ICRA 2023 -->
+              <tr>
+                <td style="padding:5px;width:40%;vertical-align:left">
+                  <video  width=100% muted autoplay loop>
+                    <source src="images/RA-L_workflow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src='images/nuvo.jpg' width=100%> -->
+                  <script type="text/javascript">
+                  </script>
+                </td>
+                <td style="padding:10px;width:60%;vertical-align:top;">
+                  <div class="papertitle">
+                    Autonomous Needle Navigation in Retinal Microsurgery: Evaluation in ex vivo Porcine Eyes
+                  </div>
+                  <strong class="correspondingauthor">Peiyao Zhang</strong>,
+                  <a class="author" href="https://sites.google.com/view/jkimrobot/home" target="_blank">Ji Woong Kim</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en&oi=ao" target="_blank">Peter Gehlbach</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=X2Snm74AAAAJ&hl=en&oi=ao" target="_blank">Iulian Iordachita</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=ra1iQ8cAAAAJ&hl=en&oi=ao" target="_blank">Marin Kobilarov</a>
+                  <br>
+                  <div class="description"><em>ICRA</em>, 2023</div>
+                  [<a class="paperlink" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10161151" target="_blank">Paper</a>]
+                  [<a class="paperlink" href="https://youtu.be/tWWS_xkE3Yw" target="_blank">Video</a>]
+                  <p></p>
+                  <p class="description" style="text-align:justify;">
+                  This work combines the Steady Hand Eye Robot (SHER) with intraoperative Optical Coherence Tomography (iOCT) to develop a workflow for autonomous needle navigation for subretinal injection.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- CDC 2021 -->
+              <tr>
+                <td style="padding:5px;width:40%;vertical-align:left">
+                  <video  width=100% muted autoplay loop>
+                    <source src="images/RA-L_workflow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src='images/nuvo.jpg' width=100%> -->
+                  <script type="text/javascript">
+                  </script>
+                </td>
+                <td style="padding:10px;width:60%;vertical-align:top;">
+                  <div class="papertitle">
+                    Towards safer retinal surgery through chance constraint optimization and real-time geometry estimation
+                  </div>
+                  <strong class="correspondingauthor">Peiyao Zhang</strong>,
+                  <a class="author" href="https://sites.google.com/view/jkimrobot/home" target="_blank">Ji Woong Kim</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en&oi=ao" target="_blank">Peter Gehlbach</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=X2Snm74AAAAJ&hl=en&oi=ao" target="_blank">Iulian Iordachita</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=ra1iQ8cAAAAJ&hl=en&oi=ao" target="_blank">Marin Kobilarov</a>
+                  <br>
+                  <div class="description"><em>CDC</em>, 2021</div>
+                  [<a class="paperlink" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9683329" target="_blank">Paper</a>]
+                  [<a class="paperlink" href="https://youtu.be/tWWS_xkE3Yw" target="_blank">Video</a>]
+                  <p></p>
+                  <p class="description" style="text-align:justify;">
+                  This work combines the Steady Hand Eye Robot (SHER) with intraoperative Optical Coherence Tomography (iOCT) to develop a workflow for autonomous needle navigation for subretinal injection.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- CoRL 2020 -->
+              <tr>
+                <td style="padding:5px;width:40%;vertical-align:left">
+                  <video  width=100% muted autoplay loop>
+                    <source src="images/RA-L_workflow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src='images/nuvo.jpg' width=100%> -->
+                  <script type="text/javascript">
+                  </script>
+                </td>
+                <td style="padding:10px;width:60%;vertical-align:top;">
+                  <div class="papertitle">
+                    Towards autonomous eye surgery by combining deep imitation learning with optimal control
+                  </div>
+                  <strong class="correspondingauthor">Peiyao Zhang</strong>,
+                  <a class="author" href="https://sites.google.com/view/jkimrobot/home" target="_blank">Ji Woong Kim</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en&oi=ao" target="_blank">Peter Gehlbach</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=X2Snm74AAAAJ&hl=en&oi=ao" target="_blank">Iulian Iordachita</a>,
+                  <a class="author" href="https://scholar.google.com/citations?user=ra1iQ8cAAAAJ&hl=en&oi=ao" target="_blank">Marin Kobilarov</a>
+                  <br>
+                  <div class="description"><em>CoRL</em>, 2020</div>
+                  [<a class="paperlink" href="https://proceedings.mlr.press/v155/kim21a/kim21a.pdf" target="_blank">Paper</a>]
+                  [<a class="paperlink" href="https://youtu.be/tWWS_xkE3Yw" target="_blank">Video</a>]
+                  <p></p>
+                  <p class="description" style="text-align:justify;">
+                  This work combines the Steady Hand Eye Robot (SHER) with intraoperative Optical Coherence Tomography (iOCT) to develop a workflow for autonomous needle navigation for subretinal injection.
+                  </p>
+                </td>
+              </tr>
+
             </tbody>
           </table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
