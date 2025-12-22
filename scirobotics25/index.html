@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="An autonomous retinal vein cannulation workflow forex vivo porcine eyes using deep learning methods and robotic assistance is presented.">
+  <meta name="keywords" content="RVC, retinal vein cannulation, robot-assisted eye surgery, bimanual manipulation, vision-based control.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep learning–based autonomous retinal vein cannulation in ex vivo porcine eyes</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Title Authors and Links -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Deep learning–based autonomous retinal vein cannulation in ex vivo porcine eyes</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zpy318.github.io/peiyao_zhang.github.io/" target="_blank">Peiyao Zhang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=fzCX-dEAAAAJ&hl=en&oi=ao" target="_blank">Peter Gehlbach</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Ph16U5wAAAAJ&hl=en&oi=ao" target="_blank">Russell H.Taylor</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=X2Snm74AAAAJ&hl=en&oi=ao" target="_blank">Iulian Iordachita</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ra1iQ8cAAAAJ&hl=en&oi=ao" target="_blank">Marin Kobilarov</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Johns Hopkins University</span>
+          </div>
+
+          <p class="has-text-centered mb-2">
+            <span class="tag is-large">
+              Science Robotics 2025
+            </span>
+          </p>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.science.org/doi/10.1126/scirobotics.adw2969" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://doi.org/10.5061/dryad.3ffbg79zd" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data & Code</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Title Authors and Links -->
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/videos/setup.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle is-centered has-text-justified">
+        We believe that expert surgical knowledge such as the principles required for successful retinal vein cannulation 
+        can be embedded into deep learning models, enabling clinicians without specialized training to perform robot-assisted 
+        autonomous procedures and achieve outcomes comparable to those of experienced surgeons.
+      </h2>
+    </div>
+  </div>
+</section>
+<!--/ Teaser -->
+
+<!-- Abstract -->
+<section class="section-block">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Retinal vein cannulation (RVC) is an emerging method for treating retinal vein occlusion (RVO). The success of this
+            procedure depends on surgeon expertise and, recently, robotic assistance. This paper proposes an autonomous
+            RVC workflow leveraging deep learning and computer vision. Two Steady-Hand Eye Robots (SHERs) controlled a
+            100-micrometer metal needle and a medical spatula to execute precise tasks. Three convolutional neural networks 
+            were trained to predict needle movement direction and identify contact and puncture events. A surgical
+            microscope with an intraoperative optical coherence tomography (iOCT) system captured the surgical field
+            through a microscope and cross-sectional images (B-scans). The goal was to enable the robot to autonomously
+            carry out the critical steps of the RVC procedure, especially those that are challenging and require expert 
+            knowledge. The less technically demanding tasks were assigned to the user, who also supervised the robot during 
+            these steps. Our method was tested on 20 ex vivo porcine eyes, achieving a success rate of 90%. In addition, we 
+            simulated eye movements caused by breathing on six other ex vivo porcine eyes. With the eyes moving in a sinusoidal
+            pattern, we achieved a success rate of 83%, demonstrating the robustness and stability of the proposed workflow.
+            Our results demonstrate that the autonomous RVC workflow, incorporating deep learning and robotic assistance,
+            achieves high success rates in both static and dynamic conditions, indicating its potential to enhance the precision
+            and reliability of RVO treatment.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+<!--/ Abstract -->
+
+<!-- Workflow -->
+<section class="section-block">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Workflow</h2>
+        <img id="graphic"
+            src="./static/images/graphic_abstract_adw2969.png"
+            alt="Graphic Abstract"
+            style="max-width: 100%; height: auto;">
+        <div class="content has-text-justified">
+          <p>
+            In this work, we propose a six step workflow for autonomous retinal vein cannulation that includes initial 
+            preparation, horizontal and vertical needle navigation, puncture, retraction, infusion, and needle removal. 
+            After the initial setup, the user was only required to select a target and perform the final infusion step. 
+            The target selection was accomplished by clicking on a pixel in the top-down microscope image using a mouse. 
+            At the same time, the infusion step required pressing the foot pedal of the vitrectomy machine. All robot 
+            movements were driven autonomously on the basis of visual feedback from the microscope images and iOCT B-scans. 
+          </p>
+        </div>
+        <img id="network"
+            src="./static/images/Fig_network_architecture.jpg"
+            alt="Network Architecture"
+            style="max-width: 100%; height: auto;">
+        <div class="content has-text-justified">
+          <p>
+            Three deep learning models were trained to provide essential information for robot control. The first one 
+            is an orientation network that uses ResNet18 as the backbone to predict the direction of needle motion toward 
+            a user-defined target. The second one is a contact network based on a YOLOv8 classification model that 
+            determines whether the needle tip has contacted the upper outer wall of the blood vessel. The third one is a 
+            puncture network based on a YOLOv8 object detection model that confirms whether the needle tip is inside the 
+            vein after puncture.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Workflow -->
+
+<!-- Resutls -->
+<section class="section-block">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Resutls</h2>
+        <div class="content has-text-justified">
+          <p>
+            A success rate of 18 of 20 was achieved in the fixed-eye experiments, and a success rate of 5 of 6 was achieved 
+            in the breathing simulation experiments. These results demonstrate the feasibility of autonomous RVC using a 
+            100-μm metal needle.
+          </p>
+        </div>
+        <!-- Fixed Eye Video -->
+        <h3 class="title is-4">Autonomous RVC on a fixed ex vivo porcine eye</h3>
+        <div class="content has-text-justified">
+          <p>
+            The video visualizes both the microscope and B-scan views of the region of interest. The user selects a target
+            with a mouse click, and the needle navigates horizontally toward the target. Upon reaching the target, the 
+            needle moves along the negative Z-axis until it contacts the outer wall of the retinal vein. The robot then 
+            initiates vein puncture along the tool's axis, retracting slightly afterward. These two steps are repeated 
+            until a successful puncture is confirmed. The user then begins the infusion process, which continues until 
+            either a successful or failed infusion is determined. In this case, the blood is flushed away by the water, 
+            as seen on the left. After infusion, the robot retracts the needle to a safe position. A blood reflux is 
+            observed in this eye.
+          </p>
+        </div>
+        <video id="fixed" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/fixed_eye.mp4"
+                  type="video/mp4">
+        </video>
+        <br/>
+        <br/>
+        <!--/ Fixed Eye Video -->
+
+        <!-- Moving Eye Video -->
+        <h3 class="title is-4">Autonomous RVC on an ex vivo porcine eye with breathing compensation</h3>
+        <div class="content has-text-justified">
+          <p>
+            The only diﬀerence between this video and previous one is the sinusoidal motion applied along the Z-axis of 
+            the eye. An additional control algorithm is implemented to ensure that the needle follows the motion pattern 
+            of the retina, based on the distance diﬀerences between B-scans calculated using the optical flow method. 
+            During the puncture process, this breathing compensation helps keep the needle tip inside the vein, as seen 
+            in the video. During the infusion step, the blood is flushed away as shown on the left. After retracting the 
+            needle, a blood reflux is also observed in this eye.
+          </p>
+        </div>
+        <video id="fixed" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/moving_eye.mp4"
+                  type="video/mp4">
+        </video>
+        <!--/ Moving Eye Video -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Results -->
+
+<!-- BibTeX -->
+<section class="section-block" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhang2025deep,
+  title={Deep learning--based autonomous retinal vein cannulation in ex vivo porcine eyes},
+  author={Zhang, Peiyao and Gehlbach, Peter and Taylor, Russell H and Iordachita, Iulian and Kobilarov, Marin},
+  journal={Science Robotics},
+  volume={10},
+  number={109},
+  pages={eadw2969},
+  year={2025},
+  publisher={American Association for the Advancement of Science}
+}</code></pre>
+  </div>
+</section>
+<!--/ BibTeX -->
+
+<!-- Acknowledgments -->
+<section class="section-block-acknowlegments" id="Acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgments</h2>
+      <p>
+         We thank Prof. <a href="https://scholar.google.com/citations?user=kzoVUPYAAAAJ&hl=en&oi=ao" target="_blank">Nassir Navab</a> and Prof. <a href="https://scholar.google.com/citations?user=vfwNmzsAAAAJ&hl=en&oi=ao" target="_blank">Mohammad Ali Nasseri</a> for discussion and feedback on the experiments.
+      </p>
+  </div>
+</section>
+<!--/ Acknowledgments -->
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <table style="width:auto;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <p style="text-align:right;font-size:small;">
+                    Website template adapted from <a href="https://nerfies.github.io"><span class="dnerf">Nerfies</span></a>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/ footer -->
+
+</body>
+</html>
